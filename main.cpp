@@ -4,6 +4,7 @@
 int main()
 {
     printf("test");
+    printf("test");
     //Initialisation
     unsigned int windowWidth = 800.0f;
     unsigned int windowHeight = 600.0f;
