@@ -3,9 +3,10 @@
 
 int main()
 {
+    printf("test");
     //Initialisation
-    float windowWidth = 800.0f;
-    float windowHeight = 600.0f;
+    unsigned int windowWidth = 800.0f;
+    unsigned int windowHeight = 600.0f;
 
     float floorHeight = 100.0f;
     float floorWidth = 800.0f;
@@ -14,7 +15,7 @@ int main()
 
     sf::RectangleShape floor(sf::Vector2f(floorWidth,floorHeight));
     floor.setFillColor(sf::Color(100,10,10));
-    floor.setPosition(0.0f,windowHeight-floorHeight);
+    floor.setPosition(0.0f,float(windowHeight)-floorHeight);
 
     while (window.isOpen()) {
 
