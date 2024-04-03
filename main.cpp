@@ -15,7 +15,7 @@ int main()
     int imageSize = 32;
     int idle;
     float moveSpeed = 0.1;
-    float jumpSpeed = 0.2;
+    float jumpSpeed = 0.1;
     float groundHeight = 500;
 
     unsigned int windowWidth = 800.0f;
