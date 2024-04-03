@@ -7,10 +7,16 @@ int main()
 
     sf::Vector2i  source(1, RightUp);
 
+    const float gravity = 0.0001;
+    sf::Vector2f velocity(sf::Vector2f(0,0));
+
     float frameCounter = 0, switchFrame = 100, frameSpeed = 500;
 
     int imageSize = 32;
     int idle;
+    float moveSpeed = 0.1;
+    float jumpSpeed = 0.2;
+    float groundHeight = 500;
 
     unsigned int windowWidth = 800.0f;
     unsigned int windowHeight = 600.0f;
@@ -28,8 +34,7 @@ int main()
 
     playerImage.setTexture(texture);
 
-    // Set position of the playerImage sprite to the center of the window
-    playerImage.setPosition(0, 568);
+    playerImage.setPosition(0, 0);
 
     while (window.isOpen()) {
         // Update
@@ -41,22 +46,34 @@ int main()
                     break;
             }
         }
-
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
             source.y = RightRun;
-            playerImage.move(0.1,0);
+            velocity.x = moveSpeed;
             idle = 0;
         }
         else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
             source.y = LeftRun;
-            playerImage.move(-0.1,0);
+            velocity.x = -moveSpeed;
             idle = 1;
         }
         else
+            velocity.x = 0;
             if (idle == 1)
                 source.y = LeftIdle;
             else if (idle == 0)
                 source.y = RightIdle;
+
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && playerImage.getPosition().y == 468) {
+            velocity.y = -jumpSpeed;
+        }
+
+        playerImage.move(velocity.x, velocity.y);
+
+        if(playerImage.getPosition().y + 32 < groundHeight) {
+            velocity.y += gravity;
+        }
+        else
+            playerImage.setPosition(playerImage.getPosition().x, groundHeight - 32);
 
         frameCounter += frameSpeed * clock.restart().asSeconds();
         if (frameCounter >= switchFrame) {
