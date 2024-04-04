@@ -1,6 +1,19 @@
 #include <SFML/Graphics.hpp>
 #include <string>
+#include <random>
 using namespace std;
+sf::RectangleShape platform(sf::Vector2f(200,100));
+int random1 = 300;
+int random2 = 400;
+
+void random() {
+    std::random_device rd;     // Only used once to initialise (seed) engine
+    std::mt19937 rng(rd());    // Random-number engine used (Mersenne-Twister in this case)
+    std::uniform_int_distribution<int> uni(10, 100); // Guaranteed unbiased
+    random1 = uni(rng);
+    random2 = uni(rng);
+}
+
 
 int main()
 {
@@ -22,8 +35,17 @@ int main()
     unsigned int windowWidth = 800.0f;
     unsigned int windowHeight = 600.0f;
 
+    sf::RectangleShape floor(sf::Vector2f(800,100));
+    floor.setPosition(sf::Vector2f(0,500));
+    floor.setFillColor(sf::Color(100, 200, 50));
+
+
     sf::RenderWindow window(sf::VideoMode(windowWidth, windowHeight), "Dylan's Game");
     window.setKeyRepeatEnabled(false);
+
+
+
+
 
     sf::Texture texture;
     sf::Sprite playerImage;
@@ -66,8 +88,13 @@ int main()
         }
 
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && playerImage.getPosition().y == 468) {
+            if (last == "R")
+                source.y = RightUp;
+            else
+                source.y = LeftUp;
+
             velocity.y = -jumpSpeed;
-            source.y = RightUp;
+
         }
 
         playerImage.move(velocity.x, velocity.y);
@@ -93,6 +120,12 @@ int main()
         window.clear(sf::Color::Black); // Clear the window before drawing
         playerImage.setTextureRect(sf::IntRect(source.x * imageSize, source.y * imageSize, imageSize, imageSize));
         window.draw(playerImage);
+
+        //random();
+        platform.setPosition(sf::Vector2f((float) random1, (float) random2));
+        platform.setFillColor(sf::Color(100, 250, 50));
+        window.draw(platform);
+        window.draw(floor);
         window.display();
     }
 
