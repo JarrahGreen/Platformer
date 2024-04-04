@@ -1,4 +1,6 @@
 #include <SFML/Graphics.hpp>
+#include <string>
+using namespace std;
 
 int main()
 {
@@ -13,11 +15,10 @@ int main()
     float frameCounter = 0, switchFrame = 100, frameSpeed = 500;
 
     int imageSize = 32;
-    int idle;
     float moveSpeed = 0.1;
-    float jumpSpeed = 0.1;
+    float jumpSpeed = 0.2;
     float groundHeight = 500;
-
+    string last = "R";
     unsigned int windowWidth = 800.0f;
     unsigned int windowHeight = 600.0f;
 
@@ -40,31 +41,33 @@ int main()
         // Update
         sf::Event Event{};
         while (window.pollEvent(Event)) {
-            switch (Event.type) {
-                case sf::Event::Closed:
-                    window.close();
-                    break;
+            if (Event.type == sf::Event::Closed) {
+                window.close();
+                break;
             }
         }
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
             source.y = RightRun;
+            last = "R";
             velocity.x = moveSpeed;
-            idle = 0;
         }
         else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
             source.y = LeftRun;
+            last = "L";
             velocity.x = -moveSpeed;
-            idle = 1;
         }
-        else
-            velocity.x = 0;
-            if (idle == 1)
+        else {
+            if (last == "L") {
                 source.y = LeftIdle;
-            else if (idle == 0)
+            } else {
                 source.y = RightIdle;
+            }
+            velocity.x = 0;
+        }
 
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && playerImage.getPosition().y == 468) {
             velocity.y = -jumpSpeed;
+            source.y = RightUp;
         }
 
         playerImage.move(velocity.x, velocity.y);
@@ -75,6 +78,9 @@ int main()
         else
             playerImage.setPosition(playerImage.getPosition().x, groundHeight - 32);
 
+
+
+
         frameCounter += frameSpeed * clock.restart().asSeconds();
         if (frameCounter >= switchFrame) {
             frameCounter = 0;
@@ -84,10 +90,11 @@ int main()
         }
 
         // Draw
+        window.clear(sf::Color::Black); // Clear the window before drawing
         playerImage.setTextureRect(sf::IntRect(source.x * imageSize, source.y * imageSize, imageSize, imageSize));
         window.draw(playerImage);
         window.display();
-        window.clear(sf::Color::Black);
     }
+
     return 0;
 }
