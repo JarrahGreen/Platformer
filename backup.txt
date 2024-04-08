@@ -1,8 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include <string>
 #include <random>
-#include <iostream>
-
 using namespace std;
 sf::RectangleShape platform(sf::Vector2f(100,50));
 int random1 = 300;
@@ -38,12 +36,38 @@ void random() {
 }
 
 bool collision() {
-    if (platform.getGlobalBounds().intersects(playerImage.getGlobalBounds())) {
-        return true;
+    sf::FloatRect playerBounds = playerImage.getGlobalBounds();
+    sf::FloatRect platformBounds = platform.getGlobalBounds();
+
+    bool topCollision = ((playerBounds.top + playerBounds.height >= platformBounds.top &&
+                        playerBounds.top + playerBounds.height <= platformBounds.top) && (platformBounds.top < playerBounds.top < platformBounds.top + platformBounds.width));
+    bool bottomCollision = playerBounds.top <= platformBounds.top + platformBounds.height &&
+                           playerBounds.top >= platformBounds.top + platformBounds.height;
+    bool leftCollision = playerBounds.left + playerBounds.width >= platformBounds.left &&
+                         playerBounds.left + playerBounds.width <= platformBounds.left;
+    bool rightCollision = playerBounds.left <= platformBounds.left + platformBounds.width &&
+                          playerBounds.left >= platformBounds.left + platformBounds.width;
+
+    if (topCollision) {
+        velocity.y = 0;
+        printf("top");
+        playerImage.setPosition(playerImage.getPosition().x, platform.getPosition().y - 32);
+
     }
-    else {
-        return false;
+    else if (bottomCollision) {
+        printf("bottom");
+        velocity.y = 0;
+        playerImage.setPosition(playerImage.getPosition().x, platform.getPosition().y + platform.getSize().y);
     }
+    else if (leftCollision) {
+        printf("left");
+        velocity.x = 0;
+    }
+    else if (rightCollision)
+        printf("right");
+        velocity.x = 0;
+
+    return topCollision || bottomCollision || leftCollision || rightCollision;
 }
 
 
@@ -82,16 +106,12 @@ int main()
             source.y = RightRun;
             last = "R";
             velocity.x = moveSpeed;
-            if (collision() || playerImage.getPosition().x > 775) {
-                velocity.x = 0;
-            }
+
+
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
             source.y = LeftRun;
             last = "L";
             velocity.x = -moveSpeed;
-            if (collision() || playerImage.getPosition().x < -5) {
-                velocity.x = 0;
-            }
 
 
         } else {
@@ -111,23 +131,6 @@ int main()
 
             velocity.y = -jumpSpeed;
         }
-
-
-        if (collision()) {
-            // Top of platform
-            if (velocity.y > 0) {
-                velocity.y = 0;
-                playerImage.setPosition(playerImage.getPosition().x, platform.getPosition().y - 32);
-            }
-                // Bottom of platform
-            else if (velocity.y < 0) {
-                velocity.y = 0;
-                playerImage.setPosition(playerImage.getPosition().x, platform.getPosition().y + platform.getSize().y);
-            }
-        }
-
-
-
 
         playerImage.move(velocity.x, velocity.y);
 
