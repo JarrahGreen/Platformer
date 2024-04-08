@@ -4,10 +4,6 @@
 #include <iostream>
 
 using namespace std;
-sf::RectangleShape platform(sf::Vector2f(100,50));
-int random1 = 300;
-int random2 = 350;
-
 enum {RightUp, RightRun, RightIdle, LeftUp, LeftRun, LeftIdle};
 
 sf::Vector2i  source(1, RightUp);
@@ -24,18 +20,23 @@ float groundHeight = 500;
 string last = "R";
 unsigned int windowWidth = 800.0f;
 unsigned int windowHeight = 600.0f;
+bool canJump;
 
 sf::Texture texture;
 sf::Sprite playerImage;
 
 
-void random() {
-    std::random_device rd;     // Only used once to initialise (seed) engine
-    std::mt19937 rng(rd());    // Random-number engine used (Mersenne-Twister in this case)
-    std::uniform_int_distribution<int> uni(10, 100); // Guaranteed unbiased
-    random1 = uni(rng);
-    random2 = uni(rng);
-}
+
+std::random_device rd;     // Only used once to initialise (seed) engine
+std::mt19937 rng(rd());    // Random-number engine used (Mersenne-Twister in this case)
+std::uniform_int_distribution<int> uni(10, 600); // Guaranteed unbiased
+float random1 = uni(rng);
+float random2 = uni(rng);
+
+sf::RectangleShape platform(sf::Vector2f(100,50));
+
+
+
 
 bool collision() {
     if (platform.getGlobalBounds().intersects(playerImage.getGlobalBounds())) {
@@ -49,7 +50,10 @@ bool collision() {
 
 int main()
 {
-    // Initialisation
+    // Initialisation of platforms
+    platform.setPosition(sf::Vector2f(random1,random2));
+    platform.setFillColor(sf::Color(100, 250, 50));
+
     sf::RectangleShape floor(sf::Vector2f(800,100));
     floor.setPosition(sf::Vector2f(0,500));
     floor.setFillColor(sf::Color(100, 200, 50));
@@ -103,7 +107,23 @@ int main()
             velocity.x = 0;
         }
 
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && (playerImage.getPosition().y == groundHeight - 32 || (platform.getPosition().x < playerImage.getPosition().x < platform.getPosition().x + 200) && playerImage.getPosition().y == 318)) {
+        // is the player on the ground?
+        if (playerImage.getPosition().y == groundHeight - 32 || ((platform.getPosition().x < playerImage.getPosition().x < platform.getPosition().x + 200) && (playerImage.getPosition().y + 32 == platform.getPosition().y))) {
+            canJump = true;
+        } else {
+            canJump = false;
+        }
+
+        /*
+        cout << "player: ";
+        cout << playerImage.getPosition().y + 32;
+        cout << "platform: ";
+        cout <<platform.getPosition().y;
+        cout << "\n";
+
+         */
+
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && canJump) {
             if (last == "R")
                 source.y = RightUp;
             else
@@ -156,8 +176,7 @@ int main()
         window.draw(playerImage);
 
         //random();
-        platform.setPosition(sf::Vector2f((float) random1, (float) random2));
-        platform.setFillColor(sf::Color(100, 250, 50));
+
         window.draw(platform);
         window.draw(floor);
         window.display();
