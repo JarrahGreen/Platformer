@@ -35,9 +35,6 @@ float random2 = uni(rng);
 
 sf::RectangleShape platform(sf::Vector2f(100,50));
 
-
-
-
 bool collision() {
     if (platform.getGlobalBounds().intersects(playerImage.getGlobalBounds())) {
         return true;
