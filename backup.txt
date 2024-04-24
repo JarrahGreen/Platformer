@@ -23,7 +23,7 @@ string last = "R";
 unsigned int windowWidth = 800.0f;
 unsigned int windowHeight = 600.0f;
 
-sf::Texture texture;
+sf::Texture texturePlayer;
 sf::Sprite playerImage;
 
 
@@ -84,11 +84,11 @@ int main()
 
     sf::Clock clock;
 
-    if (!texture.loadFromFile("C:/Users/dylan/OneDrive - West Herts College/C Lion/HelloSFML/Spritesheet.png")) {
+    if (!texturePlayer.loadFromFile("C:/Users/dylan/OneDrive - West Herts College/C Lion/HelloSFML/Spritesheet.png")) {
 
     }
 
-    playerImage.setTexture(texture);
+    playerImage.setTexture(texturePlayer);
 
     playerImage.setPosition(0, 0);
 
@@ -149,7 +149,7 @@ int main()
         if (frameCounter >= switchFrame) {
             frameCounter = 0;
             source.x++;
-            if (source.x * imageSize >= texture.getSize().x)
+            if (source.x * imageSize >= texturePlayer.getSize().x)
                 source.x = 0;
         }
 

@@ -3,33 +3,37 @@
 #include <random>
 #include <iostream>
 
+// Vector
+
 using namespace std;
 enum {RightUp, RightRun, RightIdle, LeftUp, LeftRun, LeftIdle};
 
 sf::Vector2i  source(1, RightUp);
 
-const float gravity = 0.0001;
+const float gravity = 0.0004;
 sf::Vector2f velocity(sf::Vector2f(0,0));
 
 float frameCounter = 0, switchFrame = 100, frameSpeed = 500;
 
 int imageSize = 32;
-float moveSpeed = 0.1;
-float jumpSpeed = 0.2;
-float groundHeight = 500;
+float moveSpeed = 0.3;
+float jumpSpeed = 0.4;
+float groundHeight = 542;
 string last = "R";
 unsigned int windowWidth = 800.0f;
 unsigned int windowHeight = 600.0f;
 bool canJump;
 
-sf::Texture texture;
+sf::Texture texturePlayer;
 sf::Sprite playerImage;
 
+sf::Texture textureBackground;
+sf::Sprite backgroundImage;
 
 
 std::random_device rd;     // Only used once to initialise (seed) engine
 std::mt19937 rng(rd());    // Random-number engine used (Mersenne-Twister in this case)
-std::uniform_int_distribution<int> uni(10, 600); // Guaranteed unbiased
+std::uniform_int_distribution<int> uni(300, 400); // Guaranteed unbiased
 float random1 = uni(rng);
 float random2 = uni(rng);
 
@@ -44,30 +48,25 @@ bool collision() {
     }
 }
 
-
 int main()
 {
-    // Initialisation of platforms
+    // Initialisation of platform
     platform.setPosition(sf::Vector2f(random1,random2));
     platform.setFillColor(sf::Color(100, 250, 50));
-
-    sf::RectangleShape floor(sf::Vector2f(800,100));
-    floor.setPosition(sf::Vector2f(0,500));
-    floor.setFillColor(sf::Color(100, 200, 50));
-
 
     sf::RenderWindow window(sf::VideoMode(windowWidth, windowHeight), "Dylan's Game");
     window.setKeyRepeatEnabled(false);
 
     sf::Clock clock;
 
-    if (!texture.loadFromFile("C:/Users/dylan/OneDrive - West Herts College/C Lion/HelloSFML/Spritesheet.png")) {
-
-    }
-
-    playerImage.setTexture(texture);
-
+    if (!texturePlayer.loadFromFile("D:/Users/22000773/OneDrive - West Herts College/C Lion/HelloSFML/Spritesheet.png")) {}
+    playerImage.setTexture(texturePlayer);
     playerImage.setPosition(0, 0);
+
+    if (!textureBackground.loadFromFile("D:/Users/22000773/OneDrive - West Herts College/C Lion/HelloSFML/background.png")) {}
+    backgroundImage.setTexture(textureBackground);
+    backgroundImage.setPosition(0, 0);
+
 
     while (window.isOpen()) {
         // Update
@@ -110,15 +109,7 @@ int main()
         } else {
             canJump = false;
         }
-
-        /*
-        cout << "player: ";
-        cout << playerImage.getPosition().y + 32;
-        cout << "platform: ";
-        cout <<platform.getPosition().y;
-        cout << "\n";
-
-         */
+        
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && canJump) {
             if (last == "R")
@@ -163,19 +154,17 @@ int main()
         if (frameCounter >= switchFrame) {
             frameCounter = 0;
             source.x++;
-            if (source.x * imageSize >= texture.getSize().x)
+            if (source.x * imageSize >= texturePlayer.getSize().x)
                 source.x = 0;
         }
 
         // Draw
         window.clear(sf::Color::Black); // Clear the window before drawing
         playerImage.setTextureRect(sf::IntRect(source.x * imageSize, source.y * imageSize, imageSize, imageSize));
+        window.draw(backgroundImage);
         window.draw(playerImage);
 
-        //random();
-
         window.draw(platform);
-        window.draw(floor);
         window.display();
     }
 

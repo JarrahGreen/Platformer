@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/dylan/OneDrive - West Herts College/C Lion/HelloSFML
+# Install script for directory: D:/Users/22000773/College/C Lion/Platformer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2023.1.1/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "D:/Users/22000773/scoop/apps/jetbrains-toolbox/current/apps/CLion/bin/mingw/bin/objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/dylan/OneDrive - West Herts College/C Lion/HelloSFML/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Users/22000773/College/C Lion/Platformer/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
