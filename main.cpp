@@ -30,6 +30,8 @@ sf::Sprite playerImage;
 sf::Texture textureBackground;
 sf::Sprite backgroundImage;
 
+sf::Texture texturePlatform;
+sf::Sprite platformImage;
 
 std::random_device rd;     // Only used once to initialise (seed) engine
 std::mt19937 rng(rd());    // Random-number engine used (Mersenne-Twister in this case)
@@ -38,6 +40,10 @@ float random1 = uni(rng);
 float random2 = uni(rng);
 
 sf::RectangleShape platform(sf::Vector2f(100,50));
+
+
+
+
 
 bool collision() {
     if (platform.getGlobalBounds().intersects(playerImage.getGlobalBounds())) {
@@ -67,6 +73,9 @@ int main()
     backgroundImage.setTexture(textureBackground);
     backgroundImage.setPosition(0, 0);
 
+    if (!texturePlatform.loadFromFile("D:/Users/22000773/OneDrive - West Herts College/C Lion/HelloSFML/platform.png")) {}
+    platformImage.setTexture(texturePlatform);
+    platformImage.setPosition(sf::Vector2f(random1,random2));
 
     while (window.isOpen()) {
         // Update
@@ -163,8 +172,8 @@ int main()
         playerImage.setTextureRect(sf::IntRect(source.x * imageSize, source.y * imageSize, imageSize, imageSize));
         window.draw(backgroundImage);
         window.draw(playerImage);
+        window.draw(platformImage);
 
-        window.draw(platform);
         window.display();
     }
 
