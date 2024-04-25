@@ -1,6 +1,12 @@
 #include <SFML/Graphics.hpp>
 #include <string>
 
+/* todo Scene Manager
+ * Start Screen
+ * Add hit boxes on platforms to you know when you are hitting the sides
+ * */
+
+
 using namespace std;
 enum {RightUp, RightRun, RightIdle, LeftUp, LeftRun, LeftIdle};
 
@@ -13,7 +19,7 @@ float frameCounter = 0, switchFrame = 100, frameSpeed = 500;
 
 int imageSize = 64;
 float moveSpeed = 0.35;
-float jumpSpeed = 0.6;
+float jumpSpeed = 0.7;
 float groundHeight = 900;
 string last = "R";
 unsigned int windowWidth = 1920;
@@ -97,15 +103,25 @@ int main()
             source.y = RightRun;
             last = "R";
             velocity.x = moveSpeed;
-            if (collisionOne() || collisionTwo() || playerImage.getPosition().x > 1860) {
+
+            if (collisionOne() || collisionTwo()) {
                 velocity.x = 0;
             }
+
+            if (playerImage.getPosition().x > 1860) {
+                playerImage.setPosition(playerImage.getPosition().x - 1900, playerImage.getPosition().y);
+            }
+
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
             source.y = LeftRun;
             last = "L";
             velocity.x = -moveSpeed;
-            if (collisionOne() || collisionTwo() || playerImage.getPosition().x < -15) {
+            if (collisionOne() || collisionTwo()) {
                 velocity.x = 0;
+            }
+
+            if (playerImage.getPosition().x < -15) {
+                playerImage.setPosition(playerImage.getPosition().x + 1900, playerImage.getPosition().y);
             }
 
 
@@ -128,7 +144,6 @@ int main()
         } else {
             canJump = false;
         }
-
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && canJump) {
             if (last == "R")
@@ -164,6 +179,10 @@ int main()
                 velocity.y = 0;
                 playerImage.setPosition(playerImage.getPosition().x, platformTwo.getPosition().y + platformTwo.getSize().y);
             }
+        }
+
+        if (playerImage.getPosition().y < 0) {
+            playerImage.setPosition(playerImage.getPosition().x, playerImage.getPosition().y + 1100);
         }
 
 
