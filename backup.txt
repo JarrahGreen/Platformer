@@ -2,7 +2,7 @@
 #include <string>
 #include <random>
 using namespace std;
-sf::RectangleShape platform(sf::Vector2f(100,50));
+sf::RectangleShape platformOne(sf::Vector2f(100,50));
 int random1 = 300;
 int random2 = 350;
 
@@ -37,7 +37,7 @@ void random() {
 
 bool collision() {
     sf::FloatRect playerBounds = playerImage.getGlobalBounds();
-    sf::FloatRect platformBounds = platform.getGlobalBounds();
+    sf::FloatRect platformBounds = platformOne.getGlobalBounds();
 
     bool topCollision = ((playerBounds.top + playerBounds.height >= platformBounds.top &&
                         playerBounds.top + playerBounds.height <= platformBounds.top) && (platformBounds.top < playerBounds.top < platformBounds.top + platformBounds.width));
@@ -51,13 +51,13 @@ bool collision() {
     if (topCollision) {
         velocity.y = 0;
         printf("top");
-        playerImage.setPosition(playerImage.getPosition().x, platform.getPosition().y - 32);
+        playerImage.setPosition(playerImage.getPosition().x, platformOne.getPosition().y - 32);
 
     }
     else if (bottomCollision) {
         printf("bottom");
         velocity.y = 0;
-        playerImage.setPosition(playerImage.getPosition().x, platform.getPosition().y + platform.getSize().y);
+        playerImage.setPosition(playerImage.getPosition().x, platformOne.getPosition().y + platformOne.getSize().y);
     }
     else if (leftCollision) {
         printf("left");
@@ -123,7 +123,7 @@ int main()
             velocity.x = 0;
         }
 
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && (playerImage.getPosition().y == groundHeight - 32 || (platform.getPosition().x < playerImage.getPosition().x < platform.getPosition().x + 200) && playerImage.getPosition().y == 318)) {
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && (playerImage.getPosition().y == groundHeight - 32 || (platformOne.getPosition().x < playerImage.getPosition().x < platformOne.getPosition().x + 200) && playerImage.getPosition().y == 318)) {
             if (last == "R")
                 source.y = RightUp;
             else
@@ -136,7 +136,7 @@ int main()
 
         if(playerImage.getPosition().y + 32 < groundHeight) {
             velocity.y += gravity;
-            if (collision())
+            if (collisionOne())
                 velocity.y -= gravity;
         }
         else
@@ -159,9 +159,9 @@ int main()
         window.draw(playerImage);
 
         //random();
-        platform.setPosition(sf::Vector2f((float) random1, (float) random2));
-        platform.setFillColor(sf::Color(100, 250, 50));
-        window.draw(platform);
+        platformOne.setPosition(sf::Vector2f((float) random1, (float) random2));
+        platformOne.setFillColor(sf::Color(100, 250, 50));
+        window.draw(platformOne);
         window.draw(floor);
         window.display();
     }
