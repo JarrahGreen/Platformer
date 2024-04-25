@@ -6,14 +6,14 @@ enum {RightUp, RightRun, RightIdle, LeftUp, LeftRun, LeftIdle};
 
 sf::Vector2i  source(1, RightUp);
 
-const float gravity = 0.0004;
+const float gravity = 0.0005;
 sf::Vector2f velocity(sf::Vector2f(0,0));
 
 float frameCounter = 0, switchFrame = 100, frameSpeed = 500;
 
-int imageSize = 32;
-float moveSpeed = 0.3;
-float jumpSpeed = 0.5;
+int imageSize = 64;
+float moveSpeed = 0.35;
+float jumpSpeed = 0.6;
 float groundHeight = 900;
 string last = "R";
 unsigned int windowWidth = 1920;
@@ -32,8 +32,8 @@ sf::Sprite platformImageOne;
 sf::Texture texturePlatformTwo;
 sf::Sprite platformImageTwo;
 
-sf::RectangleShape platformOne(sf::Vector2f(300, 120));
-sf::RectangleShape platformTwo(sf::Vector2f(300, 120));
+sf::RectangleShape platformOne(sf::Vector2f(250, 110));
+sf::RectangleShape platformTwo(sf::Vector2f(250, 110));
 
 bool collisionOne() {
     if (platformOne.getGlobalBounds().intersects(playerImage.getGlobalBounds())) {
@@ -58,7 +58,7 @@ int main()
 
     sf::Clock clock;
 
-    if (!texturePlayer.loadFromFile("D:/Users/22000773/OneDrive - West Herts College/C Lion/HelloSFML/Spritesheet.png")) {}
+    if (!texturePlayer.loadFromFile("D:/Users/22000773/OneDrive - West Herts College/C Lion/HelloSFML/Spritesheet64.png")) {}
     playerImage.setTexture(texturePlayer);
     playerImage.setPosition(0, 0);
 
@@ -68,13 +68,13 @@ int main()
     backgroundImage.setPosition(0, 0);
 
 
-    platformOne.setPosition(sf::Vector2f(600, 700));
+    platformOne.setPosition(sf::Vector2f(630, 710));
     if (!texturePlatformOne.loadFromFile("D:/Users/22000773/OneDrive - West Herts College/C Lion/HelloSFML/platform.png")) {}
     platformImageOne.setTexture(texturePlatformOne);
     platformImageOne.setPosition(sf::Vector2f(600,700));
 
 
-    platformTwo.setPosition(sf::Vector2f(900, 400));
+    platformTwo.setPosition(sf::Vector2f(930, 410));
     if (!texturePlatformTwo.loadFromFile("D:/Users/22000773/OneDrive - West Herts College/C Lion/HelloSFML/platform.png")) {}
     platformImageTwo.setTexture(texturePlatformTwo);
     platformImageTwo.setPosition(sf::Vector2f(900,400));
@@ -97,14 +97,14 @@ int main()
             source.y = RightRun;
             last = "R";
             velocity.x = moveSpeed;
-            if (collisionOne() || collisionTwo() || playerImage.getPosition().x > 1888) {
+            if (collisionOne() || collisionTwo() || playerImage.getPosition().x > 1860) {
                 velocity.x = 0;
             }
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
             source.y = LeftRun;
             last = "L";
             velocity.x = -moveSpeed;
-            if (collisionOne() || collisionTwo() || playerImage.getPosition().x < -5) {
+            if (collisionOne() || collisionTwo() || playerImage.getPosition().x < -15) {
                 velocity.x = 0;
             }
 
@@ -118,17 +118,17 @@ int main()
             velocity.x = 0;
         }
 
-        // is the player on the ground?
-        if (playerImage.getPosition().y == groundHeight - 32
+        // is the player on the ground or a platform?
+        if (playerImage.getPosition().y == groundHeight - 64
         || ((platformOne.getPosition().x < playerImage.getPosition().x < platformOne.getPosition().x + 300)
-        && (playerImage.getPosition().y + 32 == platformOne.getPosition().y))
+        && (playerImage.getPosition().y + 64 == platformOne.getPosition().y))
         || ((platformTwo.getPosition().x < playerImage.getPosition().x < platformTwo.getPosition().x + 300)
-        && (playerImage.getPosition().y + 32 == platformTwo.getPosition().y))) {
+        && (playerImage.getPosition().y + 64 == platformTwo.getPosition().y))) {
             canJump = true;
         } else {
             canJump = false;
         }
-        
+
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && canJump) {
             if (last == "R")
@@ -144,7 +144,7 @@ int main()
             // Top of platformOne
             if (velocity.y > 0) {
                 velocity.y = 0;
-                playerImage.setPosition(playerImage.getPosition().x, platformOne.getPosition().y - 32);
+                playerImage.setPosition(playerImage.getPosition().x, platformOne.getPosition().y - 64);
             }
                 // Bottom of platformOne
             else if (velocity.y < 0) {
@@ -154,12 +154,12 @@ int main()
         }
 
         if (collisionTwo()) {
-            // Top of platformOne
+            // Top of platformTwo
             if (velocity.y > 0) {
                 velocity.y = 0;
-                playerImage.setPosition(playerImage.getPosition().x, platformTwo.getPosition().y - 32);
+                playerImage.setPosition(playerImage.getPosition().x, platformTwo.getPosition().y - 64);
             }
-                // Bottom of platformOne
+                // Bottom of platformTwo
             else if (velocity.y < 0) {
                 velocity.y = 0;
                 playerImage.setPosition(playerImage.getPosition().x, platformTwo.getPosition().y + platformTwo.getSize().y);
@@ -169,13 +169,13 @@ int main()
 
         playerImage.move(velocity.x, velocity.y);
 
-        if(playerImage.getPosition().y + 32 < groundHeight) {
+        if(playerImage.getPosition().y + 64 < groundHeight) {
             velocity.y += gravity;
             if (collisionOne() || collisionTwo())
                 velocity.y -= gravity;
         }
         else
-            playerImage.setPosition(playerImage.getPosition().x, groundHeight - 32);
+            playerImage.setPosition(playerImage.getPosition().x, groundHeight - 64);
 
 
 

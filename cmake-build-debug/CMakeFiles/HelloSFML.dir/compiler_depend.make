@@ -104,7 +104,6 @@ CMakeFiles/HelloSFML.dir/main.cpp.obj: D:/Users/22000773/College/C\ Lion/Platfor
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
@@ -124,12 +123,9 @@ CMakeFiles/HelloSFML.dir/main.cpp.obj: D:/Users/22000773/College/C\ Lion/Platfor
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/predefined_ops.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/random.h \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/random.tcc \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/range_access.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/specfun.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
@@ -142,7 +138,6 @@ CMakeFiles/HelloSFML.dir/main.cpp.obj: D:/Users/22000773/College/C\ Lion/Platfor
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_numeric.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
@@ -161,9 +156,7 @@ CMakeFiles/HelloSFML.dir/main.cpp.obj: D:/Users/22000773/College/C\ Lion/Platfor
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
@@ -181,38 +174,20 @@ CMakeFiles/HelloSFML.dir/main.cpp.obj: D:/Users/22000773/College/C\ Lion/Platfor
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numeric \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_numeric_defs.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/random \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string_view \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/system_error \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/bessel_function.tcc \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/beta_function.tcc \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/ell_integral.tcc \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/exp_integral.tcc \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/gamma.tcc \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/hypergeometric.tcc \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/legendre_function.tcc \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/modified_bessel_func.tcc \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_hermite.tcc \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_laguerre.tcc \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/riemann_zeta.tcc \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/special_function_util.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
@@ -228,19 +203,13 @@ CMakeFiles/HelloSFML.dir/main.cpp.obj: D:/Users/22000773/College/C\ Lion/Platfor
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/emmintrin.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mmintrin.h \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mwaitintrin.h \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/pmmintrin.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/xmmintrin.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h \
@@ -257,7 +226,6 @@ CMakeFiles/HelloSFML.dir/main.cpp.obj: D:/Users/22000773/College/C\ Lion/Platfor
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w64-mingw32/include/limits.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w64-mingw32/include/locale.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
-  D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w64-mingw32/include/math.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w64-mingw32/include/process.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w64-mingw32/include/pthread.h \
   D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w64-mingw32/include/pthread_compat.h \
@@ -329,8 +297,6 @@ C:/SFML/include/SFML/Graphics/RenderTarget.hpp:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h:
 
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits:
-
 C:/SFML/include/SFML/Graphics/PrimitiveType.hpp:
 
 C:/SFML/include/SFML/Graphics/Glsl.inl:
@@ -352,8 +318,6 @@ C:/SFML/include/SFML/Graphics/RectangleShape.hpp:
 C:/SFML/include/SFML/Graphics/RenderStates.hpp:
 
 C:/SFML/include/SFML/Graphics/RenderTexture.hpp:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/gamma.tcc:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h:
 
@@ -377,15 +341,11 @@ C:/SFML/include/SFML/System/Vector2.hpp:
 
 C:/SFML/include/SFML/System.hpp:
 
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mmintrin.h:
-
 C:/SFML/include/SFML/Graphics/VertexArray.hpp:
 
 C:/SFML/include/SFML/System/Vector3.inl:
 
 C:/SFML/include/SFML/Graphics/View.hpp:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/modified_bessel_func.tcc:
 
 C:/SFML/include/SFML/Window.hpp:
 
@@ -404,8 +364,6 @@ C:/SFML/include/SFML/System/Export.hpp:
 C:/SFML/include/SFML/System/InputStream.hpp:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/random.h:
 
 C:/SFML/include/SFML/Window/Clipboard.hpp:
 
@@ -462,8 +420,6 @@ C:/SFML/include/SFML/Window/Sensor.hpp:
 C:/SFML/include/SFML/Window/Touch.hpp:
 
 C:/SFML/include/SFML/Window/VideoMode.hpp:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numeric:
 
 C:/SFML/include/SFML/Window/Vulkan.hpp:
 
@@ -551,8 +507,6 @@ D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h:
 
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc:
-
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h:
@@ -595,19 +549,11 @@ D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h:
 
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/random.tcc:
-
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/range_access.h:
 
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/riemann_zeta.tcc:
-
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/specfun.h:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h:
 
@@ -637,8 +583,6 @@ D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h:
 
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_numeric.h:
-
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w64-mingw32/include/wctype.h:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h:
@@ -667,10 +611,6 @@ D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale:
 
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint:
-
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w64-mingw32/include/corecrt.h:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio:
@@ -695,12 +635,6 @@ D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios:
 
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mwaitintrin.h:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream:
-
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map:
@@ -713,13 +647,9 @@ D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h:
 
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_numeric_defs.h:
-
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/random:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept:
 
@@ -732,26 +662,6 @@ D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string_view:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/system_error:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/bessel_function.tcc:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/beta_function.tcc:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/ell_integral.tcc:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/exp_integral.tcc:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/hypergeometric.tcc:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/legendre_function.tcc:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_hermite.tcc:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_laguerre.tcc:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/special_function_util.h:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits:
 
@@ -767,9 +677,13 @@ D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h:
 
+D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h:
+
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h:
+
+D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h:
 
@@ -777,21 +691,13 @@ D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h:
 
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h:
-
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h:
 
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/emmintrin.h:
-
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/pmmintrin.h:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/xmmintrin.h:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w64-mingw32/include/_mingw.h:
 
@@ -818,8 +724,6 @@ D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w6
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w64-mingw32/include/locale.h:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w64-mingw32/include/malloc.h:
-
-D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w64-mingw32/include/math.h:
 
 D:/Users/22000773/scoop/persist/jetbrains-toolbox/apps/CLion/bin/mingw/x86_64-w64-mingw32/include/pthread.h:
 
